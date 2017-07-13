@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/favorit_header_height"
+            android:id="@+id/favorit_header">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/black_bar"
+                android:scaleType="fitXY"
+                android:id="@+id/background_favorit_item"/>
+            <ImageView
+                android:layout_width="@dimen/sound_manager_sash_widht"
+                android:layout_height="match_parent"
+                android:src="@drawable/green_sash"
+                android:scaleType="fitXY"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="20dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/unlock_view_bt_color"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:id="@+id/favorit_title"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/g_check"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/select_category"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favorit_item_view"
+            android:layout_below="@+id/favorit_header">
+
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

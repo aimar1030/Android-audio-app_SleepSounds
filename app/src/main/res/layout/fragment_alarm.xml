@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scrollview_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:background="@color/alarm_timer_nav_color"
+        android:id="@+id/alarm_header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear"
+            android:layout_marginLeft="@dimen/menu_margin"
+            android:layout_centerVertical="true"
+            android:id="@+id/close_alarm_view_bt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Alarm"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"
+            android:id="@+id/alarm_view_title"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/check"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:layout_centerVertical="true"
+            android:id="@+id/check_bt"/>
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarm_header">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sound_row">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/b_volume"
+                    android:id="@+id/volume_ic"
+                    android:layout_marginLeft="22dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/volume_ic"
+                    android:text="Sound"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#555555"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_toLeftOf="@+id/arrow_sound"
+                    android:text="Use current mix selection"
+                    android:id="@+id/sub_title_sound"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/arrow_sound"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ABABAB"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fade_in_row">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/b_barchar"
+                    android:id="@+id/fade_in_ic"
+                    android:layout_marginLeft="22dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/fade_in_ic"
+                    android:text="Fade In"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#555555"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_toLeftOf="@+id/arrow_fade_in"
+                    android:id="@+id/sub_title_fade_in"
+                    android:text="30 seconds"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:layout_marginRight="22dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/arrow_fade_in"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ABABAB"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/snooze_row">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/b_repeat"
+                    android:id="@+id/snooze_ic"
+                    android:layout_marginLeft="22dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/snooze_ic"
+                    android:text="Snooze"
+                    android:layout_centerVertical="true" />
+
+                <com.zenlabs.sleepsounds.customview.CustomSwitch
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:id="@+id/snooze_switch"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ABABAB"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fade_out_row">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="17dp"
+                    android:src="@drawable/b_barchar"
+                    android:id="@+id/fade_out_ic"
+                    android:layout_marginLeft="22dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/fade_out_ic"
+                    android:text="Fade Out"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#555555"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_toLeftOf="@+id/arrow_fade_out"
+                    android:text="30 seconds"
+                    android:id="@+id/sub_title_fade_out"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/arrow_fade_out"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ABABAB"
+                    android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/power_row">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:src="@drawable/b_power"
+                    android:id="@+id/power_ic"
+                    android:layout_marginLeft="22dp"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="22dp"
+                    android:textColor="#000000"
+                    android:layout_toRightOf="@+id/power_ic"
+                    android:text="Exit App"
+                    android:layout_centerVertical="true" />
+
+                <com.zenlabs.sleepsounds.customview.CustomSwitch
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="22dp"
+                    android:id="@+id/exit_switch"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ABABAB"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+        </TableRow>
+
+    </TableLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picker_view_height"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picker_view"
+            android:background="#02B1B4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:id="@+id/linearLayout">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/clock_picker"
+                    android:background="#02B1B4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:layout_centerInParent="true"
+                        android:text="Clock"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#059EA1"
+                    android:id="@+id/counter_picker">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:layout_centerInParent="true"
+                        android:text="Countdown"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.zenlabs.sleepsounds.customview.CustomCounterPicker
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/linearLayout"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/picker_counter">
+
+            </com.zenlabs.sleepsounds.customview.CustomCounterPicker>
+
+            <com.zenlabs.sleepsounds.customview.CustomTimerPicker
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/picker_timer">
+
+            </com.zenlabs.sleepsounds.customview.CustomTimerPicker>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

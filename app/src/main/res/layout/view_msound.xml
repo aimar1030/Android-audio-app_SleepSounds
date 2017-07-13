@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sound_manager_height"
+        android:layout_marginBottom="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/sound_main_panel">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/sound_background"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.3"
+                android:background="@drawable/trending_gradient"/>
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:visibility="gone"
+                android:background="@drawable/gradient">
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/a_play"
+                android:id="@+id/play_bt"
+                android:layout_marginLeft="@dimen/sound_manager_play_button_left_margin"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_centerVertical="true"
+                android:textColor="@color/sound_manager_title_color"
+                android:layout_toEndOf="@+id/play_bt"
+                android:id="@+id/sound_title"
+                android:layout_marginLeft="@dimen/sound_manager_title_left_margin" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/sound_manager_sash_widht"
+                android:layout_height="match_parent"
+                android:background="@color/sound_manager_sash_color"
+                android:id="@+id/greenSashView">
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/sound_manager_volume_panel_width"
+            android:id="@+id/play_bt_action"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/sound_manager_volume_panel_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sound_volume_panel"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/sound_manager_volume_panel_color"
+                    android:alpha="0.6">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sound_manager_volume_button_height"
+                    android:layout_alignParentTop="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a_volume_up"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sound_dot_view_height"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/dot_view"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sound_manager_volume_button_height"
+                    android:layout_alignParentBottom="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/a_volume_down"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/sound_manager_volume_panel_width"
+            android:layout_height="@dimen/sound_manager_volume_button_height"
+            android:layout_alignParentTop="true"
+            android:id="@+id/volume_up"
+            android:layout_alignParentEnd="true"/>
+
+        <RelativeLayout
+            android:layout_width="@dimen/sound_manager_volume_panel_width"
+            android:layout_height="@dimen/sound_manager_volume_button_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/volume_down" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/scrollview_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:background="@color/menu_background"
+        android:id="@+id/favorit_nav">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/favorit_title"
+            android:layout_centerInParent="true"
+            android:textColor="@color/counter_text_color"
+            android:id="@+id/textView" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/pen"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:layout_centerVertical="true"
+            android:id="@+id/edit_favorit_bt"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/plus"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/edit_favorit_bt"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:id="@+id/add_favorit_bt"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/favorit_list"
+        android:background="@color/scrollview_background"
+        android:layout_below="@+id/favorit_nav">
+    </ListView>
+
+</RelativeLayout>

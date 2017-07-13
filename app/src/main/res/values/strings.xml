@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Sleep Sounds</string>
+    <string name="PREFS">prefs</string>
+    <string name="daily_inspiration">daily inspiration</string>
+    <string name="join_the_community">Join the Community</string>
+    <string name="advice_1">Advice and tips from fitness experts on how to exercise safely and lose weight effectively</string>
+    <string name="advice_2">After signing up, receive a free ebook on how to maximize fat loss through running!</string>
+    <string name="advice_3">Become a part of a passionate and friendly community, ready to help each other out!</string>
+    <string name="type_email">type in your email address</string>
+    <string name="register_now">register now</string>
+    <string name="tip">tip: daily inspiration can be turned off under settings</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Find People</item>
+        <item >Photos</item>
+        <item >Communities</item>
+        <item >Pages</item>
+        <item >What\'s Hot</item>
+    </string-array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    
+    <string name="main_title">Ambient Sounds</string>
+
+    <string name="favorit_title">Favorites</string>
+
+    <string name="unlock_title">UNLOCK ADDITIONAL SOUNDS</string>
+
+    <string name="alarm_timer_title">Alarm &amp; Timer</string>
+
+    <string name="menu_title">Settings</string>
+
+    <string-array name="menu_cell_title">
+        <item>Like Us on Facebook</item>
+        <item>Follow Us on Twitter</item>
+        <item>Follow Us on Instagram</item>
+        <item>Tips Screen</item>
+        <item>Send Feedback</item>
+        <item>Share</item>
+        <item>Help</item>
+        <item>Unlock All</item>
+        <item>Restore Purchase</item>
+        <item>Forums</item>
+        <item>More Apps</item>
+    </string-array>
+
+    <string name="thanks">THANKS!</string>
+    <string name="never_show_this">NEVER SHOW THIS</string>
+    <string name="prefield_facebook_popup_text">IF YOU WANT A PRE-FILLED TEXT, JUST LONG PRESS ON THE CURSOR AND HIT \"PASTE\"."</string>
+    <string name="sharing_text_workout_end">Check us out the newest Sleep Sounds app from @zenlabsfitness!</string>
+    <string name="application_unavailable">Application unavailable</string>
+    <string name="error_app_not_found">You need to install the application on your device in order to share.</string>
+    <string name="ok">OK</string>
+
+    <string name="email_app">contactus@zenlabsfitness.com</string>
+    <string name="app_feedback">App Feedback</string>
+    <string name="feedback_app_name">AppName: Sleep Sounds by Zen Labs Fitness</string>
+    <string name="app_version">App Version:</string>
+    <string name="device_model">Device Model:</string>
+    <string name="os_version">OS Version:</string>
+    <string name="send_email">Send Email</string>
+
+    <string name="share_text">Hey! check out the newest Sleep Sounds app.  \nhttp://play.google.com/store/apps/details?id=com.zenlabs.sleepsounds \nYou can also check out their awesome community here: \nhttp://www.facebook.com/zenlabsfitness \nhttp://twitter.com/zenlabsfitness \nhttp://instagram.com/zenlabsfitness \nhttp://forums.zenlabsfitness.com</string>
+    <string name="share_subject">Check out the new Sleep Sounds app!</string>
+
+    <string name="forum">Forum</string>
+    <string name="no_intertnet_connections">No Internet Connection!</string>
+    <string name="pls_check_intertnet_connections">Please check your internet connection!</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-7527075736358168/9788011345</string>
+
+</resources>

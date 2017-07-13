@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:font="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/transparent_black_color"
+    android:gravity="center">
+
+    <com.zenlabs.sleepsounds.customview.FontTextView
+        android:id="@+id/prefieldFacebookPopupThanksTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/forum_nav_bar_padding"
+        android:background="@color/green_frog_color"
+        android:gravity="center"
+        android:paddingLeft="@dimen/forum_nav_bar_padding"
+        android:paddingRight="@dimen/forum_nav_bar_padding"
+        android:singleLine="true"
+        android:text="@string/thanks"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/prefield_text_size"
+        font:customFont="SohoGothicPro-Bold.otf" />
+
+    <com.zenlabs.sleepsounds.customview.FontTextView
+        android:id="@+id/prefieldFacebookPopupNeverShowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="@dimen/forum_nav_bar_padding"
+        android:background="@color/red_light_color"
+        android:gravity="center"
+        android:paddingLeft="@dimen/forum_nav_bar_padding"
+        android:paddingRight="@dimen/forum_nav_bar_padding"
+        android:singleLine="true"
+        android:text="@string/never_show_this"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/prefield_text_size"
+        font:customFont="SohoGothicPro-Bold.otf" />
+
+    <com.zenlabs.sleepsounds.customview.FontTextView
+        android:id="@+id/prefieldFacebookPopupInfoTextTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prefieldFacebookPopupThanksTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/exercise_info_padding"
+        android:layout_marginTop="@dimen/exercise_info_padding"
+        android:gravity="center"
+        android:padding="@dimen/exercise_info_padding"
+        android:text="@string/prefield_facebook_popup_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/prefield_text_size"
+        font:customFont="SohoGothicPro-Bold.otf" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/prefield_screenshoot_size"
+        android:layout_below="@+id/prefieldFacebookPopupInfoTextTextView"
+        android:layout_marginLeft="@dimen/forum_nav_bar_padding"
+        android:layout_marginRight="@dimen/forum_nav_bar_padding"
+        android:scaleType="fitCenter"
+        android:src="@drawable/prefield_screenshoot" />
+
+</RelativeLayout>

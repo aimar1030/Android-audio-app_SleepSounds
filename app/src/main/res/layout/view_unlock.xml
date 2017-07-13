@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/unlock_view_height"
+        android:layout_marginBottom="2dp">
+
+        <ImageView
+            android:layout_width="@dimen/sound_manager_sash_widht"
+            android:layout_height="match_parent"
+            android:id="@+id/sash_view"
+            android:src="@color/sound_manager_sash_color"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/unlock_view_background_color"
+            android:layout_toRightOf="@+id/sash_view"
+            android:layout_toLeftOf="@+id/bt_unlock">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unlock_title"
+                android:textSize="13dp"
+                android:textColor="@color/unlock_view_bt_color"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/unlock_title"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/unlock_view_bt_width"
+            android:layout_height="match_parent"
+            android:background="@color/unlock_view_bt_color"
+            android:id="@+id/bt_unlock"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$2.99"
+                android:textSize="16dp"
+                android:textColor="@color/unlock_view_background_color"
+                android:layout_centerInParent="true"
+                android:id="@+id/unlock_bt_title"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

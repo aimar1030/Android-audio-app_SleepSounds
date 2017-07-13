@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EcoGallery">
+        <attr name="gravity" format="integer" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="unselectedAlpha" format="float" />
+        <attr name="spacing" format="dimension" />
+    </declare-styleable>
+
+    <attr name="ecoGalleryStyle" format="reference" />
+
+    <declare-styleable name="CustomAbsSpinner">
+        <attr name="entries" format="reference" />
+    </declare-styleable>
+
+    <attr name="customAbsSpinnerStyle" format="reference" />
+    
+    <attr name="handlePosition">
+        <enum name="left" value="0" />
+        <enum name="middle" value="1" />
+        <enum name="right" value="2" />
+        <enum name="left_tablet" value="3" />
+        <enum name="middle_tablet" value="4" />
+        <enum name="right_tablet" value="5" />
+    </attr>
+
+    <declare-styleable name="MySlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="handlePosition" />
+        <attr name="position" format="integer" />
+        <attr name="orientation" format="dimension" />
+        <attr name="bottomOffset" format="dimension" />
+        <attr name="topOffset" format="dimension" />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+
+</resources>

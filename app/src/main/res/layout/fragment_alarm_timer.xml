@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:background="@color/alarm_timer_nav_color"
+        android:id="@+id/alarm_timer_header">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear"
+            android:layout_marginLeft="@dimen/menu_margin"
+            android:layout_centerVertical="true"
+            android:id="@+id/close_alarm_timer_view_bt"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/alarm_timer_title"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pen"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:layout_centerVertical="true"
+            android:id="@+id/edit_bt"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plus"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/edit_bt"
+            android:layout_marginRight="@dimen/menu_margin"
+            android:id="@+id/add_alarm_timer_bt"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/alarm_timer_header"
+        android:background="@color/scrollview_background"
+        android:id="@+id/alerm_timer_list">
+
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_below="@+id/alarm_timer_header"
+        android:id="@+id/alarm_timer_alert_view">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.64"/>
+        <RelativeLayout
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:background="#02B1B4"
+            android:layout_centerInParent="true"
+            android:id="@+id/alarm_select_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="19dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp"
+                android:text="Select item to add"/>
+
+            <RelativeLayout
+                android:layout_width="206dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true">
+
+                <RelativeLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/line_alarm_timer">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="33dp"
+                    android:layout_toLeftOf="@+id/line_alarm_timer">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/w_alarm"
+                        android:scaleType="center"
+                        android:id="@+id/select_alarm"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#FFFFFF"
+                        android:text="Alarm"
+                        android:layout_below="@+id/select_alarm"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="33dp"
+                    android:layout_toRightOf="@+id/line_alarm_timer">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/w_timer"
+                        android:scaleType="center"
+                        android:id="@+id/select_timer"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#FFFFFF"
+                        android:text="Timer"
+                        android:layout_below="@+id/select_timer"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="#059EA1"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/cancel_bt">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_centerInParent="true"
+                    android:text="Cancel"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+[
+    {
+        "outputFile": "/Volumes/WORK_4/Android/SleepSounds/proj/android/SleepSounds/ecogallery/build/intermediates/res/merged/androidTest/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 59,
+                    "endOffset": 110
+                },
+                "from": {
+                    "file": "/Volumes/WORK_4/Android/SleepSounds/proj/android/SleepSounds/ecogallery/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 59,
+                        "endOffset": 110
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 115,
+                    "endColumn": 53,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "/Volumes/WORK_4/Android/SleepSounds/proj/android/SleepSounds/ecogallery/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 115,
+                        "endColumn": 53,
+                        "endOffset": 164
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endLine": 11,
+                    "endColumn": 11,
+                    "endOffset": 464
+                },
+                "from": {
+                    "file": "/Volumes/WORK_4/Android/SleepSounds/proj/android/SleepSounds/ecogallery/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 169,
+                        "endLine": 11,
+                        "endColumn": 11,
+                        "endOffset": 464
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1257,
+                    "endColumn": 57,
+                    "endOffset": 1310
+                },
+                "from": {
+                    "file": "/Volumes/WORK_4/Android/SleepSounds/proj/android/SleepSounds/ecogallery/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 1257,
+                        "endColumn": 57,
+                        "endOffset": 1310
+                    }
+                }
+            }
+        ]
+    }
+]

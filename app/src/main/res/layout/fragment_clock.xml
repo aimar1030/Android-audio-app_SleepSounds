@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/clock_background2_portrait"
+            android:scaleType="fitXY"
+            android:alpha="0"
+            android:id="@+id/background_clock2"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/background_clock1"
+            android:scaleType="fitXY"
+            android:alpha="1"
+            android:src="@drawable/clock_background1_portrait"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:alpha="0.4"
+            android:id="@+id/touchView">
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tip_layout">
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="106dp"
+                android:src="@drawable/clock_tip"
+                android:id="@+id/tip_imageview"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="453dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/timer_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="50dp"
+                android:text="123123"
+                android:gravity="center"
+                android:id="@+id/current_time"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

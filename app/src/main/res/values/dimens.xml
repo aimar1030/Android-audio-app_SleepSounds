@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="menu_margin">20dp</dimen>
+    <dimen name="menu_height">60dp</dimen>
+    <dimen name="alarm_alert_img_size">20dp</dimen>
+    <dimen name="alarm_alert_img_right_margin">10dp</dimen>
+    <dimen name="alarm_alert_view_height">30dp</dimen>
+
+    <dimen name="alarm_alert_title_width">92dp</dimen>
+    <dimen name="alarm_alert_title_height">20dp</dimen>
+    <dimen name="alarm_alert_title_text_size">17dp</dimen>
+    <dimen name="alarm_alert_title_right_margin">3dp</dimen>
+
+    <dimen name="sound_manager_height">80dp</dimen>
+    <dimen name="sound_manager_sash_widht">4dp</dimen>
+    <dimen name="sound_manager_volume_panel_width">50dp</dimen>
+    <dimen name="sound_manager_volume_button_height">40dp</dimen>
+    <dimen name="sound_manager_play_button_left_margin">20dp</dimen>
+    <dimen name="sound_manager_title_left_margin">10dp</dimen>
+    <dimen name="sound_dot_view_height">4dp</dimen>
+
+    <dimen name="unlock_view_height">40dp</dimen>
+    <dimen name="unlock_view_bt_width">80dp</dimen>
+
+    <dimen name="slider_width">240dp</dimen>
+    <dimen name="slider_height">30dp</dimen>
+
+    <dimen name="control_view_height">60dp</dimen>
+
+    <dimen name="favorit_header_height">40dp</dimen>
+    <dimen name="favorit_contain_item_height">80dp</dimen>
+
+    <dimen name="switch_bt_height">25dp</dimen>
+
+    <dimen name="picker_view_height">220dp</dimen>
+
+    <dimen name="forum_nav_bar_padding">5dp</dimen>
+    <dimen name="prefield_text_size">13sp</dimen>
+    <dimen name="exercise_info_padding">15dp</dimen>
+    <dimen name="prefield_screenshoot_size">300dp</dimen>
+    <dimen name="information_dialog_paddings">12dp</dimen>
+    <dimen name="information_dialog_title_text_size">21sp</dimen>
+    <dimen name="information_dialog_button_text_size">17sp</dimen>
+
+    <dimen name="padding_action_bar_icons">17dp</dimen>
+    <dimen name="menu_color_divider_h">3dp</dimen>
+    <dimen name="action_bar_text_size">18sp</dimen>
+
+    <dimen name="admob_banner_size">50dp</dimen>
+
+</resources>

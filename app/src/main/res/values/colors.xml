@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="list_divider">#000000</color>
+    <color name="list_background">#FFFFFF</color>
+    <color name="list_background_pressed">#6D6D6D</color>
+    <color name="counter_text_bg">#6D6D6D</color>
+    <color name="counter_text_color">#555555</color>
+    <color name="list_item_title">#9a9a9a</color>
+
+    <color name="menu_background">#FFFFFF</color>
+    <color name="scrollview_background">#EFEFEF</color>
+    <color name="alarm_alert_title_text_color">#FFFFFF</color>
+
+    <color name="sound_manager_sash_color">#BED62F</color>
+    <color name="sound_manager_volume_panel_color">#000000</color>
+    <color name="sound_manager_title_color">#FFFFFF</color>
+
+    <color name="unlock_view_bt_color">#BED62F</color>
+    <color name="unlock_view_background_color">#363636</color>
+
+    <color name="alarm_timer_nav_color">#02B1B4</color>
+
+    <color name="menu_color">#02B1B4</color>
+
+    <color name="transparent_black_color">#85000000</color>
+    <color name="green_frog_color">#6ce72d</color>
+    <color name="red_light_color">#e50006</color>
+    <color name="gray_information_popup_backround_color">#dad9d9</color>
+    <color name="blue_information_popup_text_color">#007aff</color>
+
+    <color name="dark_gray_blue_menu_background_color">#2b3e42</color>
+    <color name="red_menu_color">#d84152</color>
+    <color name="turk_green_menu_color">#15aab0</color>
+    <color name="frog_green_menu_color">#b3d445</color>
+    <color name="blue_button_color">#02b1b4</color>
+
+</resources>
